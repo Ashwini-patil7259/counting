@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    gap: 20px; 
+    padding: 20px 40px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    background-color: dimgrey;  /* Light background color */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+}
+
+.btn {
+    display: flex; /* Keep buttons aligned in a row */
+    gap: 20px; /* Space between buttons */
+}
+
+.btn button {
+    width: 120px; /* Increased width for buttons */
+    height: 80px; /* Increased height for buttons */
+    padding: 20px; /* Add some padding */
+    font-size: 24px; /* Adjust font size for better readability */
+    border: none; /* Remove default border */
+    border-radius: 100px; /* Add rounded corners */
+    background-color: crimson; /* Base color for buttons */
+    color: white; /* Button text color */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+    font-weight: bold;
+}
+
+.btn button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    animation: forwards;
+}
+
+.btn button:active {
+    transform: translateY(0); /* Reset position on click */
+}
